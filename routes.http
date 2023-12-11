@@ -1,0 +1,31 @@
+POST http://localhost:3333/calca
+Content-Type: application/json
+
+{
+    "tamanho": "M",
+    "tecido": "Jeans",
+    "cor": "Escuro"  
+}
+
+###
+
+GET  http://localhost:3333/calca?search=M
+
+###
+
+GET  http://localhost:3333/calca
+
+###
+
+PUT   http://localhost:3333/calca/e26633a9-9887-407b-8ad1-64e1143e832f
+Content-Type: application/json
+
+{
+    "tamanho": "M",
+    "tecido": "Jeans",
+    "cor": "Escuro"
+}
+
+###
+
+DELETE   http://localhost:3333/calca/87001464-ed50-416f-b54f-7a2e1493e077
